@@ -1,12 +1,15 @@
 import path from 'path'
-import { getAllWordsFromSCELFile } from '../../libs/parseSCILFile.js'
+import { promises } from 'fs'
 
-const EXTENSION = '.scel'
+const EXTENSION = '.txt'
 const IGNORE_PREFIX = '_'
 
 export default () =>
   async function (file) {
     if (!file.endsWith(EXTENSION)) return []
     if (path.basename(file).startsWith(IGNORE_PREFIX)) return []
-    return await getAllWordsFromSCELFile(file)
+    const content = await promises.readFile(file)
+    return String(content)
+      .split('\n')
+      .map((w) => w.replaceAll('\n', ''))
   }

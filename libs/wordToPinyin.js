@@ -1,6 +1,6 @@
 import pinyin from 'pinyin'
 
-const startWithYWYuExp = /$yu|w|y/
+const startWithYWYuExp = /^yu|w|y/
 
 export function wordToPinyin(word) {
   const quanpins = pinyin(word, {

@@ -9,3 +9,5 @@ export async function asyncMap(arr, cb) {
   }
   return rtn
 }
+
+export const promiseMap = async (arr, cb) => Promise.all(arr.map(cb))

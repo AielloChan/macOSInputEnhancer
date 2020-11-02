@@ -1,4 +1,5 @@
 {
+  "version": "0.5.0",
   "type": "module",
   "scripts": {
     "dev": "NODE_ENV=development node index.js",
@@ -7,6 +8,7 @@
   "dependencies": {
     "pinyin": "^2.9.1",
     "scel-parser": "^1.0.1",
-    "write": "^2.0.0"
+    "write": "^2.0.0",
+    "xml2js": "^0.4.23"
   }
 }
