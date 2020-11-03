@@ -10,6 +10,7 @@ export default () =>
   async function (file) {
     if (!file.endsWith(EXTENSION)) return []
     if (path.basename(file).startsWith(IGNORE_PREFIX)) return []
+
     const xmlContent = await promises.readFile(file)
     const asyncParseString = promisify(parseString)
     const [err, result] = await asyncParseString(xmlContent)

@@ -1,4 +1,6 @@
+// 小鹤转换码表
 export default {
+  // 声母表
   initialTable: {
     b: 'b',
     c: 'c',
@@ -25,6 +27,7 @@ export default {
     z: 'z',
     zh: 'v',
   },
+  // 韵母表
   vowelTable: {
     a: 'a',
     ai: 'd',
@@ -60,6 +63,7 @@ export default {
     v: 'v',
     ve: 't',
   },
+  // 单音节表
   bareTable: {
     a: 'aa',
     ai: 'ai',
