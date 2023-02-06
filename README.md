@@ -1,6 +1,8 @@
 # mac自带输入法扩展
 
-将词库导入到macOS自带输入法中使用
+将词库导入到 macOS 自带输入法中使用
+
+主要是借助了 iOS 和 macOS 系统自带的快捷短语功能来扩展词库：https://support.apple.com/zh-sg/guide/iphone/iph6d01d862/ios
 
 现在支持纯文本的格式搜狗输入法的
 - **功能支持**
