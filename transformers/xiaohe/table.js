@@ -54,7 +54,7 @@ export default {
     u: 'u',
     ua: 'x',
     uai: 'k',
-    uan: 'y',
+    uan: 'r',
     uang: 'l',
     ue: 't',
     ui: 'v',
