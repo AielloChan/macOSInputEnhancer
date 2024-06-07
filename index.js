@@ -1,8 +1,8 @@
-import Parser from './parser.js'
+import adapters from './adapters/index.js'
 import loaders from './loaders/index.js'
+import Parser from './parser.js'
 import plugins from './plugins/index.js'
 import transformers from './transformers/index.js'
-import adapters from './adapters/index.js'
 
 const { AddWords, Clean, HanziOnly, RandomN, Sort, Uniq, UseExample } = plugins
 const IS_DEV = process.env.NODE_ENV === 'development'
@@ -36,7 +36,8 @@ const config = {
   // 如 `我家`
   //    用小鹤转换器则会转换为 `wojx`
   //    用拼音转换器则会转换为 `wojia`
-  transformer: transformers.XiaoheTransformer(),
+  // 如果你不用小鹤双拼输入法，下方可以使用 transformers.PinyinTransformer() 拼音转换器
+  transformer: transformers.XiaoheTransformer(), 
   adapter: adapters.macOSRender(), // 适配器，将结果输出为对应平台支持的字库格式
   output: './output/macOS_input_dic.plist', // 文件保存目录
   log: true, // 是否打印日志
