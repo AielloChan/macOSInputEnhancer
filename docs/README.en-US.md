@@ -1,10 +1,10 @@
-
+[简体中文](../README.md) | [繁體中文](README.zh-TW.md) | English | [日本語](README.ja-JP.md) | [한국어](README.ko-KR.md) | [Français](README.fr-FR.md) | [Español](README.es-ES.md) | [Português do Brasil](README.pt-BR.md) | [Deutsch](README.de-DE.md) | [Русский](README.ru-RU.md)
 
 # macOS Built-in Input Method Extension
 
 Import dictionary files for use with the macOS built-in input method.
 
-It primarily leverages the built-in Text Replacement feature on iOS and macOS to extend the dictionary: https://support.apple.com/zh-sg/guide/iphone/iph6d01d862/ios
+It primarily leverages the built-in Text Replacement feature on iOS and macOS to extend the dictionary: https://support.apple.com/en-us/guide/iphone/iph6d01d862/ios
 
 Currently supports Sogou Input Method files in plain text format:
 - **Feature Support**
@@ -99,7 +99,7 @@ Configuration File Format
 
 The configuration file is sequential. The processing pipeline cannot be reversed or reordered, and must strictly follow:
 
-`` `inputs`->`loaders`->`plugins`->`transformer`->`adapter`->`output` ``
+`inputs` -> `loaders` -> `plugins` -> `transformer` -> `adapter` -> `output`
 
 - loaders: Responsible for loading different file formats. Input parameter is the `absolute path of a single file`. Returns an `array of phrases`, e.g., `["你好","今天"]`.
 - plugins: Accepts an array of entries, e.g., `["你好","今天"]`. After processing, it outputs an array in the same format. For example, to filter out `"你好"`, it would return `["今天"]`.
