@@ -1,3 +1,5 @@
+简体中文 | [繁體中文](docs/README.zh-TW.md) | [English](docs/README.en-US.md) | [日本語](docs/README.ja-JP.md) | [한국어](docs/README.ko-KR.md) | [Français](docs/README.fr-FR.md) | [Español](docs/README.es-ES.md) | [Português do Brasil](docs/README.pt-BR.md) | [Deutsch](docs/README.de-DE.md) | [Русский](docs/README.ru-RU.md)
+
 # mac自带输入法扩展
 
 将词库导入到 macOS 自带输入法中使用
@@ -103,5 +105,4 @@
 - plugins：插件，接受数组格式的词条，如`["你好","今天"]`，处理后同样输出为数组格式，比如要过滤掉`"你好"`，就可以返回`["今天"]`
 - transformer：用来将词条转换为 [你好, nihc] 这样的数组
 - adapter：转换为不同平台的数据格式
-
 
